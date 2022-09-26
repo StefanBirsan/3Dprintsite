@@ -44,10 +44,10 @@
         </div>
       </div>
 
-      <div class="input">
-        <label for="file-upload" class="custom-file-upload">Upload File</label>
-        <input id="file-upload" type="file" accept=".stl" />
-      </div>
+      <form  class="custom-file-upload"  action="demo.php" method="POST" enctype="multipart/form-data">
+        <input  type="file" name="file">
+        <button type="submit" name="submit">UPLOAD</button>
+      </form> 
 
       <!-----  featured categories ----->
 
