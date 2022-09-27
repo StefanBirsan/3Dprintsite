@@ -30,6 +30,7 @@ nav ul li {
 	margin-right: 20px;
 }
 
+
 a {
 	text-decoration: none;
 	color: rgb(225, 222, 228);
@@ -119,6 +120,7 @@ p {
 	padding: 10px;
 	min-width: 100px;
 	margin-bottom: 50px;
+	transition: transform 0.5s;
 }
 
 .col-4 img {
@@ -152,4 +154,48 @@ p {
 	border: 5px solid rgb(47, 19, 201);
 	color: black;
 	background-color: white;
+}
+
+.title{
+	text-align: center;
+	margin: 0 auto 80px;
+	position: relative;
+	line-height: 60px;
+	color: rgb(239, 234, 241);
+}
+
+.title:after{
+	content: '';
+	background:  #19658a;
+	width: 80px;
+	height: 5px;
+	border-radius: 5px;
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+h4{
+	color: #000000;
+	font-weight: normal;
+}
+
+h2{
+	color: #0000cc;
+	font-weight: normal;
+}
+
+small{
+	color: #6666ff;
+	font-weight: normal;
+}
+
+.col-4 p{
+	font-size: 14px;
+
+}
+
+.col-4:hover{
+	transform: translateY(-5px);
 }
