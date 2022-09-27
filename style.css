@@ -42,7 +42,7 @@ p {
 
 .baack {
 	background: rgb(28, 25, 46);
-	background: linear-gradient(90deg, rgba(28, 25, 46, 1) 0%, rgba(64, 64, 64, 1) 51%, rgba(28, 24, 37, 1) 100%);
+	background: linear-gradient(#B993D6, #333399, #000000);
 }
 
 .container {
@@ -85,7 +85,7 @@ p {
 }
 
 .header {
-	background: linear-gradient(#333399, #007991, #394b82);
+	background: linear-gradient(#7303c0, #007991, #B993D6);
 }
 
 .header .row {
@@ -198,4 +198,14 @@ small{
 
 .col-4:hover{
 	transform: translateY(-5px);
+}
+
+.offer {
+	background: linear-gradient(#B993D6, #333399, #000000);
+	margin-top: 80px;
+	padding: 30px 0;
+}
+
+.col-2 .offer-img{
+	padding: 30px;
 }
