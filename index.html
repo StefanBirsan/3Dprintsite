@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
     <title>Shop3D</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,7 +22,7 @@
               <img src="pic/logo.png" width="165px" />
             </div>
             <nav>
-              <ul>
+              <ul id="MenuItems">
                 <li><a href="">Home</a></li>
                 <li><a href="">Products</a></li>
                 <li><a href="">About</a></li>
@@ -31,6 +32,7 @@
               </ul>
             </nav>
             <img src="pic/cart.png" width="45px" height="45px" />
+            <img src="pic/menu.png" class="menu-icon" onclick="menutoggle()">
           </div>
           <div class="row">
             <div class="col-2">
@@ -86,12 +88,61 @@
           </div>
           <div class="col-2">
             <p>trebuie sa decidem ce punem aici</p>
-            <h2>si aici</h2>
+            <h3>si aici</h3>
             <small>ohoo dar mai ales aici din pacate</small>
             <a href="" class="btn">Afla mai multe &#8594</a>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col1">
+            <h3>I have no clue what i should say here</h3>
+            <p>Unde e emi cand ai nevoie de text</p>
+          </div>
+          <div class="footer-col2">
+            <img src="pic/logo.png">
+            <p>ma dau cu capu de tastatura xD</p>
+          </div>
+          <div class="footer-col3">
+            <h3>Links:</h3>
+            <ul>
+                <li>Cuponuri</li>
+                <li>Blog</li>
+                <li>Alatura-te echipei</li>
+            </ul>
+          </div>
+          <div class="footer-col4">
+            <h3>Social media:</h3>
+            <ul>
+              <li>Instagram</li>
+              <li>YouTube</li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2022 - 3Dpit</p>
+      </div>
+    </div>
+
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle(){
+        if(MenuItems.style.maxHeight = "0px")
+        {
+          MenuItems.style.maxHeight = "200px";
+        }
+        else
+        {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+
   </body>
 </html>
